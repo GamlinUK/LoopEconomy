@@ -12,23 +12,23 @@ softdepend: [Vault]
 commands:
   gems:
     description: Shows your balances
-    usage: /balance (account)
+    usage: /gems (account)
     aliases: [gbal, gmoney]
   gemtop:
     description: Shows the top balances of the server
-    usage: /baltop (currency) (page)
-    aliases: [gmoneytop, gecotop, gtop, gbaltop]
+    usage: /gemtop (currency) (page)
+    aliases: [gmoneytop, gecotop, gtop, gbaltop, gemstop]
   currency:
     description: Manage the currencies.
     usage: /currency
     aliases: [gcurr, gemscurrencies, gcurrency, currencies]
   gemeconomy:
     description: Give, set or take currency.
-    usage: /eco <set|take|give> <account> <amount> (currency)
+    usage: /geco <set|take|give> <account> <amount> (currency)
     aliases: [geconomy, gemeco, geco, gemseconomy]
   gempay:
     description: Pays another account
-    usage: /pay <account> <amount> (currency)
+    usage: /gempay <account> <amount> (currency)
     aliases: [gpay, gemspay]
   cheque:
     usage: /cheque
