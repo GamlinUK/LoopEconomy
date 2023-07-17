@@ -78,14 +78,14 @@
         </repository>
         <repository>
             <id>reserve-repo</id>
-            <url>https://dl.bintray.com/theneweconomy/java/</url>
+            <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
+            <artifactId>spigot-api</artifactId>
             <version>1.16.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
@@ -110,9 +110,16 @@
         <dependency>
             <groupId>net.tnemc</groupId>
             <artifactId>Reserve</artifactId>
-            <version>0.1.1.0</version>
+            <version>0.1.5.3-SNAPSHOT-4</version>
             <scope>provided</scope>
         </dependency>
+        <!--
+        <dependency>
+            <groupId>net.tnemc</groupId>
+            <artifactId>Reserve</artifactId>
+            <version>0.1.1.0</version>
+            <scope>provided</scope>
+        </dependency>-->
     </dependencies>
 
 </project>
