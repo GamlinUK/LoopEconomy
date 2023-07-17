@@ -10,11 +10,11 @@ loadbefore:
   - ItemFrameShops
 softdepend: [Vault]
 commands:
-  balance:
+  gems:
     description: Shows your balances
     usage: /balance (account)
-    aliases: [gbal, gmoney, bal]
-  baltop:
+    aliases: [gbal, gmoney]
+  gemtop:
     description: Shows the top balances of the server
     usage: /baltop (currency) (page)
     aliases: [gmoneytop, gecotop, gtop, gbaltop]
@@ -22,11 +22,11 @@ commands:
     description: Manage the currencies.
     usage: /currency
     aliases: [gcurr, gemscurrencies, gcurrency, currencies]
-  economy:
+  gemeconomy:
     description: Give, set or take currency.
     usage: /eco <set|take|give> <account> <amount> (currency)
-    aliases: [geconomy, eco, geco, gemseconomy]
-  pay:
+    aliases: [geconomy, gemeco, geco, gemseconomy]
+  gempay:
     description: Pays another account
     usage: /pay <account> <amount> (currency)
     aliases: [gpay, gemspay]

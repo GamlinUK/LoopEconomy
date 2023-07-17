@@ -64,6 +64,27 @@
                     <outputDirectory>${project.basedir}</outputDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>com.zaxxer.hikari</pattern>
+                            <shadedPattern>me.xanium.hikari</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -113,13 +134,6 @@
             <version>0.1.5.3-SNAPSHOT-4</version>
             <scope>provided</scope>
         </dependency>
-        <!--
-        <dependency>
-            <groupId>net.tnemc</groupId>
-            <artifactId>Reserve</artifactId>
-            <version>0.1.1.0</version>
-            <scope>provided</scope>
-        </dependency>-->
     </dependencies>
 
 </project>
